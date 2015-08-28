@@ -1,3 +1,4 @@
+package ex;
 import java.security.NoSuchAlgorithmException;
 import java.util.function.Supplier;
 

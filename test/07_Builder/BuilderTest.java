@@ -5,6 +5,10 @@ import java.security.NoSuchAlgorithmException;
 
 import org.junit.Test;
 
+import ex.Director;
+import ex.HTMLBuilder;
+import ex.TextBuilder;
+
 public class BuilderTest implements ITest {
 	@Test
 	public void test1() {

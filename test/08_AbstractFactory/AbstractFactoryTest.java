@@ -1,32 +1,18 @@
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ex.framework.AFactory;
-import ex.framework.AProduct;
-import ex.idcard.IDCard;
-import ex.idcard.IDCardFactory;
+import ex.factory.AFactory;
+import ex.factory.ALink;
 
-public class AbstractFactoryTest {
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
+public class AbstractFactoryTest implements ITest {
 	@Test
-	public void test1(){
+	public void test1() {
+		// FIXME
+		AFactory factory = AFactory.getFactory(AFactory.class);
+
+		ALink asahi = factory.createLink("朝日新聞", "http://www.asahi.com/");
+		ALink yomiuri = factory.createLink("読売新聞", "http://www.yomiuri.co.jp/");
+		ALink us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
+
+		// TODO continue
 	}
 }

@@ -1,3 +1,4 @@
+package ex;
 import java.security.NoSuchAlgorithmException;
 
 public class Director {
